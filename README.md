@@ -8,3 +8,7 @@ This website serves as a presentation of [Kakashi Hatake](https://naruto.fandom.
 ## Creator
 
 [AAgzamov](https://github.com/AAgzamov)
+
+
+## Reference
+https://naruto.fandom.com/wiki/
