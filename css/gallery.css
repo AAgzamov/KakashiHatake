@@ -1,0 +1,163 @@
+@keyframes imgAppear {
+  from{
+    margin-top: 80px;
+    opacity: 0;
+  }
+  to{
+    margin-top: 10px;
+    opacity: 1;
+  }
+}
+@keyframes containerAppear {
+  from{
+    top: 100%;
+    right: 100%;
+  }
+  to{
+    top: 0%;
+    right: 0%;
+  }
+}
+
+@keyframes quitDivAppear {
+  from{
+    top: 20%;
+  }
+  to{
+    top: 0%;
+  }
+}
+
+@keyframes imgPopupAppear {
+  from{
+    margin: 130px auto;
+  }
+  to{
+    margin: 100px auto;
+  }
+}
+
+*{
+  color: white;
+  transition: .8s;
+  scroll-behavior: smooth;
+}
+*::moz-selection{
+  color: black;
+  background: white;
+}
+*::selection{
+  color: black;
+  background: white;
+}
+
+body{
+  margin: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+div.container{
+  position: absolute;
+  top: 100%;
+  right: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border: 2px solid green; */
+  flex-wrap: wrap;
+
+  animation-name: containerAppear;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+img{
+  width: 200px;
+  height: 200px;
+  border-radius: 20px;
+  border: 2px solid grey;
+  margin-top: 80px;
+  margin-bottom: 20px;
+  animation-name: imgAppear;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+}
+
+img:hover{
+  cursor: cell;
+  transform: scale(1.1, 1.1);
+  border-color: white;
+
+  filter: opacity(60%);
+}
+
+
+div.mainButton{
+  position: relative;
+  border: 2px white solid;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Saira Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 20px 500px;
+}
+
+div.mainButton:hover{
+  color: #8f8f8f;
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  border-color: #8f8f8f;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.imageViewer{
+  position: absolute;
+  z-index: 2;
+  display: none;
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+
+img.imgPopup{
+  width: 500px;
+  height: 500px;
+  margin: 130px auto;
+  display: block;
+  animation-name: imgPopupAppear;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+}
+
+img.imgPopup:hover{
+  filter: none;
+  transform: scale(1.3, 1.3);
+}
+
+div.quit{
+  position: fixed;
+  top: 20%;
+  right: 0%;
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 40px;
+  z-index: 3;
+  display: none;
+  animation-name: quitDivAppear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+div.quit:hover{
+  color: #8f8f8f;
+}

@@ -1,0 +1,212 @@
+@keyframes dropdownAppear {
+    from{
+      height: 0px;
+    }
+    to{
+      height: 300px;
+    }
+}
+
+@keyframes dropdownDisappear {
+  from{
+    height: 300px;
+  }
+  to{
+    height: 0px;
+  }
+}
+
+@keyframes summaryInfoAppear {
+  from{
+    left: 100%;
+  }
+  to {
+    left: 0%;
+  }
+}
+
+@keyframes personalityInfoAppear {
+  from{
+    right: 100%;
+  }
+  to {
+    right: 0%;
+  }
+}
+
+@keyframes mainButtonAppear {
+  from{opacity: 0;} to{opacity: 1}
+}
+*{
+  color: white;
+  transition: .8s;
+  scroll-behavior: smooth;
+}
+*::moz-selection{
+  color: black;
+  background: white;
+}
+*::selection{
+  color: black;
+  background: white;
+}
+
+body{
+  margin: 0px;
+  background-color: rgb(0, 0, 0);
+}
+
+div.summaryInfo{
+  left: 100%;
+  position: relative;
+
+  animation-name: summaryInfoAppear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+
+}
+
+div.personalityInfo{
+  right: 100%;
+  position: relative;
+
+  animation-name: personalityInfoAppear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+div.anbuCareerInfo{
+  left: 100%;
+  position: relative;
+
+  animation-name: summaryInfoAppear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+div.head{
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 50px;
+  text-align: center;
+  /* border: 2px solid red; */
+  display: block;
+  margin: auto;
+}
+
+div.head#first{
+    width: 210px;
+}
+div.head#second{
+  width: 240px;
+}
+div.head#third{
+  width: 250px;
+}
+
+div.head:hover > span{
+  cursor: pointer;
+  color: #8f8f8f;
+}
+div.head:hover{
+  transform: skew(-5deg, -2deg);
+}
+
+div.dropdown{
+  /* border: 2px solid green; */
+  font-family: "Overpass", monospace;
+  font-weight: bold;
+  font-size: 120%;
+  height: 0px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+
+  animation-name: none;
+  animation-duration: 1s;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+div.mainButton{
+  position: relative;
+  border: 2px white solid;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Saira Condensed", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  margin: 20px 500px;
+
+  animation-name: mainButtonAppear;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+div.mainButton:hover{
+  color: #8f8f8f;
+  cursor: pointer;
+  transform: scale(1.2, 1.2);
+  border-color: #8f8f8f;
+}
+
+a{
+  text-decoration: none;
+}
+
+div.dropdown p span{
+  font-family: "Saira Condensed", sans-serif;
+  font-weight: lighter;
+}
+
+div.dropdown div{
+  width: 40%;
+  /* border: 2px dashed blue; */
+  padding-left: 15%;
+}
+div.dropdown div img{
+  width: 5%;
+  height: 5%;
+}
+
+div.dropdown div.summaryInfoOne img:hover{
+  transform: rotate(180deg);
+}
+
+div.dropdown div.summaryInfoTwo img:hover{
+  cursor: pointer;
+  transform: scale(1.5, 1.5);
+}
+#sharingan:hover{
+  transform: scale(1.5, 1.5) rotate(360deg);
+}
+
+div.personalityInfo div.dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+div.personalityInfo div.dropdown p{
+  width: 81%;
+}
+
+div.anbuCareerInfo div.dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+div.anbuCareerInfo div.dropdown p{
+  font-size: 16px;
+  width: 81%;
+}
+
+/* .genjutsu{
+  position: absolute;
+  top: 0;
+  right: 10%;
+  display: none;
+
+} */

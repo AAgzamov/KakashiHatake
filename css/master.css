@@ -1,0 +1,250 @@
+/* @keyframes headerAppear {
+  from{
+    left: 50%;
+    right: 50%;
+  }
+  to{
+    left: 0%;
+    right: 0%;
+  }
+} */
+
+@keyframes bioTextAppear {
+  from{
+    padding-top: 50%;
+  }
+  to{
+    padding-top: 12px;
+  }
+}
+
+@keyframes imgAppear {
+  from{
+    padding-top: 100%;
+  }
+  to {
+    padding-top: 0px;
+  }
+}
+
+*{
+  color: white;
+  transition: .8s;
+  scroll-behavior: smooth;
+}
+*::moz-selection{
+  color: black;
+  background: white;
+}
+*::selection{
+  color: black;
+  background: white;
+}
+
+body{
+  margin: 0px;
+  background-color: rgb(66, 66, 66);
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+
+header{
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 22px;
+  position: sticky;
+  top: 0px;
+  background-color: rgba(0, 0, 0, .7);
+  display: flex;
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  box-sizing: border-box;
+
+  z-index: 1;
+  flex-direction: row;
+
+  /* animation-name: headerAppear;
+  animation-fill-mode: forwards;
+  animation-duration: 3s; */
+
+}
+
+header:hover{
+  transform: scaleY(1.1);
+  background-color: rgba(0, 0, 0, 1)
+}
+
+header div{
+  /* border: 2px solid red; */
+  width: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  box-sizing: border-box;
+}
+
+header div:hover{
+  /* cursor: pointer; */
+  color: #8f8f8f;
+  transform: translate(5px, 5px) skew(-5deg, -2deg);
+}
+
+header div a:hover{
+  cursor: pointer;
+}
+
+div.waifu:hover{
+  cursor: help;
+  transform: rotate(360deg);
+}
+
+header img{
+  /* border: 2px solid red; */
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+}
+
+header img:hover{
+  transform: scale(1.6, 1.5) translate(-20px, 20px);
+}
+
+main{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 800px;
+  /* border: 2px dotted blue; */
+  /* background-color: black; */
+  box-sizing: border-box;
+
+}
+
+main div{
+  flex-grow: 1;
+  /* border: 2px solid red; */
+  width: 300px;
+  overflow: hidden;
+}
+
+main div.bio{
+  font-family: "Overpass", sans-serif;
+  font-weight: bold;
+  font-size: 200%;
+  padding-top: 50%;
+
+  animation-name: bioTextAppear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+main div.picture-container img{
+  width: auto;
+  height: auto;
+  padding-top: 100%;
+
+  animation-name: imgAppear;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+main div.picture-container:hover{
+  cursor: pointer;
+  transform: translate(-20px, 20px);
+  transition-duration: .3s;
+  transition-delay: .2s;
+  transition-timing-function: ease-out;
+  box-shadow: -5px -5px 5px black;
+}
+
+
+
+footer{
+  display: flex;
+  width: 100%;
+  height: 200px;
+  /* border: 2px solid green; */
+  background-color: black;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+footer div{
+  margin: 15px;
+}
+footer div img:hover{
+  cursor: pointer;
+}
+
+.github-icon img{
+  width: 100px;
+  height: 100px;
+}
+
+.youtube-icon img{
+  width: 100px;
+  height: 100px;
+}
+
+
+.popup{
+  font-family: "Overpass", sans-serif;
+  font-weight: bolder;
+  font-size: 140%;
+  width: 50%;
+  height: 50%;
+  /* width: 100vw;
+  height: 100vh; */
+  background-color: rgba(0, 0, 0, .85);
+  border: 3px dashed rgb(99, 31, 35);
+  border-radius: 20px;
+  position: absolute;
+  display: flex;
+  top: 25%;
+  left: 25%;
+  z-index: 1;
+  visibility: hidden;
+
+
+  align-items: center;
+  justify-content: center;
+  transform: none;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+/* div.audioController{
+  display: flex;
+  flex-direction: column;
+  width: 5vw;
+  height: 13vh;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.5;
+  border: 2px solid white;
+  border-radius: 20px 20px 0 0;
+  align-items: center;
+}
+div.audioController:hover{
+  opacity: 1;
+}
+div.audioController img{
+  width: 80%;
+  border: 2px solid red;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+div.audioController img:hover{
+  cursor: pointer;
+} */
