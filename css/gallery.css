@@ -130,6 +130,7 @@ a{
   height: 103vh;
   margin: 0px;
   background-color: rgba(0, 0, 0, 0.92);
+  overflow: hidden;
 }
 
 img.imgPopup{
