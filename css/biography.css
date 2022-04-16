@@ -3,13 +3,13 @@
       height: 0px;
     }
     to{
-      height: 300px;
+      height: 40vh;
     }
 }
 
 @keyframes dropdownDisappear {
   from{
-    height: 300px;
+    height: 40vh;
   }
   to{
     height: 0px;
@@ -86,7 +86,7 @@ div.anbuCareerInfo{
 
 div.head{
   font-family: "Saira Condensed", sans-serif;
-  font-size: 50px;
+  font-size: 3vw;
   text-align: center;
   /* border: 2px solid red; */
   display: block;
@@ -94,13 +94,13 @@ div.head{
 }
 
 div.head#first{
-    width: 210px;
+    width: 13vw;
 }
 div.head#second{
-  width: 240px;
+  width: 14.5vw;
 }
 div.head#third{
-  width: 250px;
+  width: 15vw;
 }
 
 div.head:hover > span{
@@ -115,7 +115,7 @@ div.dropdown{
   /* border: 2px solid green; */
   font-family: "Overpass", monospace;
   font-weight: bold;
-  font-size: 120%;
+  font-size: 2.5vh;
   height: 0px;
   overflow: hidden;
   align-items: center;
@@ -129,15 +129,15 @@ div.dropdown{
 
 div.mainButton{
   position: relative;
-  border: 2px white solid;
-  border-radius: 20px;
-  font-size: 20px;
+  border: 0.2vw white solid;
+  border-radius: 3vw;
+  font-size: 1.5vw;
   font-family: "Saira Condensed", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 50px;
-  margin: 20px 500px;
+  height: 7vh;
+  margin: 2vh 35vw;
 
   animation-name: mainButtonAppear;
   animation-duration: 4s;
@@ -199,7 +199,7 @@ div.anbuCareerInfo div.dropdown{
   justify-content: center;
 }
 div.anbuCareerInfo div.dropdown p{
-  font-size: 16px;
+  font-size: 2.3vh;
   width: 81%;
 }
 
