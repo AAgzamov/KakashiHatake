@@ -5,6 +5,8 @@ This [website](https://aagzamov.github.io/KakashiHatake/) serves as a presentati
 
 *To the man who lost everything...*
 
+!Desktop environment is preferred when browsing the website!
+
 ## Contributors
 
 [AAgzamov](https://github.com/AAgzamov)
