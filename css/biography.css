@@ -210,28 +210,35 @@ div.anbuCareerInfo div.dropdown p{
         height: 0px;
       }
       to{
-        height: 90vh;
+        height: 150vh;
       }
   }
   @keyframes dropdownDisappear {
     from{
-      height: 90vh;
+      height: 150vh;
     }
     to{
       height: 0px;
     }
   }
   div.head {
-    font-size: 30px;
+    font-size: 50px;
   }
   div.head#first {
-    width: 130px;
+    width: 220px;
   }
   div.head#second {
-    width: 190px;
+    width: 240px;
   }
   div.head#third {
-    width: 160px;
+    width: 250px;
+  }
+  div.summaryInfo div.dropdown {
+    align-items: flex-start;
+  }
+  div.summaryInfo div.dropdown div{
+    /* border: 2px dashed blue; */
+    margin: 5vh 0;
   }
   div.mainButton {
     font-size: 5vw;

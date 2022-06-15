@@ -183,12 +183,12 @@ a{
 
 @media (orientation: portrait) {
   header {
-    font-size: 15px;
+    font-size: 40px;
     height: 15vh;
   }
   header div {
     width: auto;
-    margin: 5px;
+    margin: 10px;
   }
   header img {
     width: auto;
@@ -200,7 +200,7 @@ a{
     height: 70vh;
   }
   main div.bio {
-    font-size: 15px;
+    font-size: 40px;
     overflow: auto;
   }
   main div.picture-container img {
@@ -210,12 +210,14 @@ a{
     height: 15vh;
   }
   footer div {
-    margin: 10px;
+    margin: 20px;
   }
   .github-icon img{
-    height: 7vh;
+    height: 10vh;
+    width: 10vh;
   }
   .youtube-icon img{
-    height: 7vh;
+    height: 10vh;
+    width: 10vh;
   }
 }
